@@ -19,7 +19,9 @@ public class ShootProjectile : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.X)) {
 			i++;
-
+			if (i == loadout.Length) {
+				i = 0;
+			}
 			switch (i) {
 			case 0:
 				UI.text = "Ball";
@@ -28,22 +30,13 @@ public class ShootProjectile : MonoBehaviour {
 				UI.text = "Explosive";
 				break;
 			}
-
-			if (i == loadout.Length) {
-				i = 0;
-			}
 		}
 
-		Vector3 dir = (transform.position - other.transform.position).normalized;
+		Vector3 dir = (other.position - transform.position).normalized;
 		if (Input.GetKeyDown(KeyCode.F)) {
 			Debug.DrawLine(transform.position, other.position, Color.red, 1);
-			Rigidbody rb = Instantiate(
-			                   loadout[i],
-			                   new Vector3(
-			                       transform.position.x,
-			                       transform.position.y,
-			                       transform.position.z + offset),
-			                   Quaternion.identity).GetComponent<Rigidbody>();
+			Rigidbody rb;
+			rb = Instantiate(loadout[i], other.position, Quaternion.identity).GetComponent<Rigidbody>();
 			rb.velocity = dir * force;
 		}
 	}

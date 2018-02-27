@@ -228,6 +228,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4687794422235432}
+  - component: {fileID: 114820351744894002}
   m_Layer: 0
   m_Name: Tower1x1
   m_TagString: Untagged
@@ -1655,3 +1656,31 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114820351744894002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1484122551704624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3efa5936ee494b04b5d899b0e0c592e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubes:
+  - {fileID: 1267093433821960}
+  - {fileID: 1055145750697640}
+  - {fileID: 1884722525391624}
+  - {fileID: 1051778218481354}
+  - {fileID: 1134675235581694}
+  - {fileID: 1034406088387994}
+  - {fileID: 1449347968618880}
+  - {fileID: 1898904048691514}
+  - {fileID: 1450440429739648}
+  - {fileID: 1531808614679378}
+  - {fileID: 1065519849276634}
+  - {fileID: 1192194228537626}
+  - {fileID: 1726619929802940}
+  - {fileID: 1663883766912564}
+  - {fileID: 1224694288947528}
+  - {fileID: 1020306989757236}

@@ -168,6 +168,6 @@ MonoBehaviour:
   obj: {fileID: 1347673898328162}
   ExplosionCollider: {fileID: 1905906185806102}
   explosionForce: 10000
-  mod: 0
-  radius: 10
-  force: 20
+  mod: 20
+  radius: 20
+  force: 50

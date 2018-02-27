@@ -20,6 +20,7 @@ public class Explode : MonoBehaviour {
 			transform.parent = null;
 			ExplosionCollider.SetActive(true);
 			rb.AddExplosionForce(explosionForce, transform.position, radius, mod);
+			Destroy(obj, 0.1f);
 		}
 	}
 
@@ -28,9 +29,5 @@ public class Explode : MonoBehaviour {
 		rb.useGravity = false;
 		transform.parent = other.transform;
 		transform.rotation = Quaternion.identity;
-	}
-
-	void OnTriggerExit (Collider other) {
-		Destroy(obj);
 	}
 }
