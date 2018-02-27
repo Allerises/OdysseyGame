@@ -16,7 +16,7 @@ public class DemoChecker : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	/*void Update () {
+	void Update () {
 		done = true;
 		for (int i = 0; i < l; i++) {
 			destroyed[i] = cubes[i].GetComponent<Demolished>().isDemolished();
@@ -25,5 +25,5 @@ public class DemoChecker : MonoBehaviour {
 			}
 		}
 		Debug.Log(done);
-	}*/
+	}
 }
