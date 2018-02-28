@@ -1,29 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DemoChecker : MonoBehaviour {
 
 	public GameObject[] cubes;
 	bool done;
-	bool[] destroyed;
 	int l;
 
 
 	void Start () {
 		l = cubes.Length;
-		destroyed = new bool[l];
 	}
 
 	// Update is called once per frame
 	void Update () {
 		done = true;
 		for (int i = 0; i < l; i++) {
-			destroyed[i] = cubes[i].GetComponent<Demolished>().isDemolished();
-			if(!destroyed[i]) {
+			if (!cubes[i].GetComponent<Demolished>().isDemolished()) {
 				done = false;
 			}
 		}
-		Debug.Log(done);
+	}
+
+	public bool buildingDown () {
+		return done;
 	}
 }
