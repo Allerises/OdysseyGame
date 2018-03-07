@@ -61,6 +61,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Update is called once per frame
         private void Update()
         {
+            transform.position = new Vector3(
+                Mathf.Clamp(transform.position.x, -250f, 250f),
+                transform.position.y,
+                Mathf.Clamp(transform.position.z, -250f, 250f));
+
             RotateView();
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
