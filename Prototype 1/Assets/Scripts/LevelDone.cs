@@ -19,7 +19,6 @@ public class LevelDone : MonoBehaviour {
 				done = false;
 			}
 		}
-		Debug.Log(done);
 		if (done) {
 			UI.text = "Level Complete";
 		}
