@@ -62,9 +62,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private void Update()
         {
             transform.position = new Vector3(
-                Mathf.Clamp(transform.position.x, -250f, 250f),
+                Mathf.Clamp(transform.position.x, -148f, 148f),
                 transform.position.y,
-                Mathf.Clamp(transform.position.z, -250f, 250f));
+                Mathf.Clamp(transform.position.z, -148f, 148f));
 
             RotateView();
             // the jump state needs to read here to make sure it is not missed

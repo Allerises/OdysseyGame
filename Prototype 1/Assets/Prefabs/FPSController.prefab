@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 81663653544630030}
   - component: {fileID: 124628667202993380}
   - component: {fileID: 114209791103646198}
+  - component: {fileID: 114247992975956530}
   m_Layer: 0
   m_Name: FirstPersonCharacter
   m_TagString: MainCamera
@@ -130,7 +131,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4294967039
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -276,7 +277,21 @@ MonoBehaviour:
   other: {fileID: 4462670510639134}
   force: 1.1
   offset: 0.5
-  UI: {fileID: 114462830628246864, guid: 5734da0b4d025441282d40ed0863f58f, type: 2}
+  UI: {fileID: 0}
+--- !u!114 &114247992975956530
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1291473440712744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d69f344ed4b124dad9acc0e97814834c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 0}
+  start: {fileID: 0}
+  timeLimit: 60
 --- !u!114 &114948742206357890
 MonoBehaviour:
   m_ObjectHideFlags: 1
