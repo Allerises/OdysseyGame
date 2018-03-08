@@ -14,6 +14,8 @@ public class RestartLevel : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.R)) {
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
+		} else if (Input.GetKeyDown(KeyCode.M)) {
+			SceneManager.LoadScene("Menu");
 		}
 	} 
 }

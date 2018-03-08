@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
+	public string[] Scenes;
+
 	// Use this for initialization
 	public void PlayGame ()
 	{
-		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
+		int r = Random.Range(0, Scenes.Length);
+		SceneManager.LoadScene(Scenes[r]);
 	}
 
 	public void QuitGame ()

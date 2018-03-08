@@ -7,14 +7,14 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour {
 
-	public Text timer;
+	public Text timer, UI;
 	public Canvas start;
 	public float timeLimit;
 	UnityStandardAssets.Characters.FirstPerson.FirstPersonController c;
 	bool started = false;
 
 	void Start() {
-		timer.text = timeLimit.ToString() + " remaining";
+		timer.text = timeLimit.ToString() + " seconds remain";
 		c = GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>();
 		c.enabled = false;
 	}
@@ -29,10 +29,11 @@ public class Timer : MonoBehaviour {
 
 		if (started) {
 			timeLimit -= Time.deltaTime;
-			timer.text = timeLimit.ToString() + " remaining";
+			timer.text = timeLimit.ToString() + " remain";
 		}
 		if (timeLimit <= 0) {
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
+			c.enabled = false;
+			UI.text = "Time's up!\nPress M to return to menu or R to restart.";
 		}
 	}
 }

@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 81663653544630030}
   - component: {fileID: 124628667202993380}
   - component: {fileID: 114209791103646198}
-  - component: {fileID: 114247992975956530}
   m_Layer: 0
   m_Name: FirstPersonCharacter
   m_TagString: MainCamera
@@ -43,6 +42,7 @@ GameObject:
   - component: {fileID: 114948742206357890}
   - component: {fileID: 54514860661145022}
   - component: {fileID: 82975288468661592}
+  - component: {fileID: 114404635105100882}
   m_Layer: 0
   m_Name: FPSController
   m_TagString: Untagged
@@ -273,25 +273,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadout:
   - {fileID: 1493466766495674, guid: 2a38fbf6ac2ab40b3a5a57e53a3f31da, type: 2}
-  - {fileID: 1347673898328162, guid: 93f62db4b3c69411c8605320bdf9d8bb, type: 2}
   other: {fileID: 4462670510639134}
   force: 1.1
   offset: 0.5
   UI: {fileID: 0}
---- !u!114 &114247992975956530
+--- !u!114 &114404635105100882
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1291473440712744}
+  m_GameObject: {fileID: 1426117083905760}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d69f344ed4b124dad9acc0e97814834c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 0}
+  UI: {fileID: 0}
   start: {fileID: 0}
-  timeLimit: 60
+  timeLimit: 50
 --- !u!114 &114948742206357890
 MonoBehaviour:
   m_ObjectHideFlags: 1
