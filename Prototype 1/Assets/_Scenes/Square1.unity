@@ -787,14 +787,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114638840324308656, guid: 90b20f477f1354a5d9599fa9a6f05a56,
         type: 2}
-      propertyPath: c
-      value: 
-      objectReference: {fileID: 1150101976}
-    - target: {fileID: 114638840324308656, guid: 90b20f477f1354a5d9599fa9a6f05a56,
-        type: 2}
       propertyPath: UI
       value: 
       objectReference: {fileID: 1575452283}
+    - target: {fileID: 114638840324308656, guid: 90b20f477f1354a5d9599fa9a6f05a56,
+        type: 2}
+      propertyPath: c
+      value: 
+      objectReference: {fileID: 1150101976}
     - target: {fileID: 114905494507591644, guid: 90b20f477f1354a5d9599fa9a6f05a56,
         type: 2}
       propertyPath: canvas

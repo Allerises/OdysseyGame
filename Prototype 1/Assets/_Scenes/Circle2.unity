@@ -822,21 +822,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114905494507591644, guid: 90b20f477f1354a5d9599fa9a6f05a56,
-        type: 2}
-      propertyPath: canvas
-      value: 
-      objectReference: {fileID: 1922155764}
-    - target: {fileID: 114638840324308656, guid: 90b20f477f1354a5d9599fa9a6f05a56,
-        type: 2}
-      propertyPath: c
-      value: 
-      objectReference: {fileID: 2095236165}
     - target: {fileID: 114638840324308656, guid: 90b20f477f1354a5d9599fa9a6f05a56,
         type: 2}
       propertyPath: UI
       value: 
       objectReference: {fileID: 628957104}
+    - target: {fileID: 114638840324308656, guid: 90b20f477f1354a5d9599fa9a6f05a56,
+        type: 2}
+      propertyPath: c
+      value: 
+      objectReference: {fileID: 2095236165}
+    - target: {fileID: 114905494507591644, guid: 90b20f477f1354a5d9599fa9a6f05a56,
+        type: 2}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1922155764}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90b20f477f1354a5d9599fa9a6f05a56, type: 2}
   m_IsPrefabParent: 0

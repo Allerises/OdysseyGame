@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 7e4359c2af9ed52469cbbe38cb8057cb
+timeCreated: 1520730176
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - bottomTextured: {fileID: 4909831596785514, guid: 8a1f100affd0a42da907aea18db48e1b,
+      type: 2}
+  - middleTextured: {fileID: 4689207582206076, guid: 3bce07a85996146d6850041cf30de8d8,
+      type: 2}
+  - bottom2x2Textured: {fileID: 4508162242869922, guid: 7ffdbc764f5954d24962e3ad2b884353,
+      type: 2}
+  - middle2x2Textured: {fileID: 4529073543999128, guid: e809ea7eef25044d08d6bb6d01ed9327,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
