@@ -5,14 +5,24 @@ using UnityEngine.UI;
 
 public class ShootProjectile : MonoBehaviour {
 
+	public AudioClip shootSound;
 	public GameObject[] loadout;
 	public Transform other;
 	public float force, offset;
 	public Text UI;
+
+	private float throwSpeed = 2000f;
+	private AudioSource source;
+	private float volLowRange = .5f;
+	private float volHighRange = 1.0f;
 	int i;
 
 	void Start () {
 		i = 0;
+	}
+
+	void Awake () {
+		source = GetComponent<AudioSource> ();
 	}
 
 	// Update is called once per frame
@@ -38,6 +48,8 @@ public class ShootProjectile : MonoBehaviour {
 			Rigidbody rb;
 			rb = Instantiate(loadout[i], other.position, Quaternion.identity).GetComponent<Rigidbody>();
 			rb.velocity = dir * force;
+			float vol = Random.Range (volLowRange, volHighRange);
+			source.PlayOneShot (shootSound, vol);
 		}
 	}
 }

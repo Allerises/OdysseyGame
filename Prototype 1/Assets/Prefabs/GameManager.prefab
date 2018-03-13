@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114334825789308298}
   - component: {fileID: 114638840324308656}
   - component: {fileID: 114905494507591644}
+  - component: {fileID: 114207121458681274}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -42,6 +43,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114207121458681274
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1148124238931014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e4359c2af9ed52469cbbe38cb8057cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bottomTextured: {fileID: 4952872572088924, guid: 0a4113925781b40afa5e534276cdef99,
+    type: 2}
+  middleTextured: {fileID: 4884468611466332, guid: 8839fee049b73426c841be87656bbdfe,
+    type: 2}
+  bottom2x2Textured: {fileID: 4123128493423838, guid: a3bc10ac485054ee4ad8ae448f87f1f5,
+    type: 2}
+  middle2x2Textured: {fileID: 4752733451368892, guid: 632486998fb224284b0a610c244b5d22,
+    type: 2}
 --- !u!114 &114334825789308298
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -66,8 +86,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   demolished: []
   KeepSafe: []
-  c: {fileID: 0}
-  UI: {fileID: 0}
+  c: {fileID: 114948742206357890, guid: a25b33174edb14b9aa5df2b6e2bc3ba7, type: 2}
+  UI: {fileID: 114584338798524320, guid: 5734da0b4d025441282d40ed0863f58f, type: 2}
 --- !u!114 &114905494507591644
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -79,4 +99,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6362a2d533d24b99a6662bde51c0d1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
+  canvas: {fileID: 223898804709382428, guid: bebc48ff1026d4dee9f0931de8f7c554, type: 2}
